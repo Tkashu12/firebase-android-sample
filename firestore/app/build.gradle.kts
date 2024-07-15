@@ -3,6 +3,7 @@ plugins {
     id("kotlin-android")
     id("com.google.gms.google-services")
     id("androidx.navigation.safeargs")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -85,6 +86,7 @@ dependencies {
     // Android architecture components
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+    implementation("com.google.firebase:firebase-crashlytics:19.0.3")
     annotationProcessor("androidx.lifecycle:lifecycle-compiler:2.8.3")
 
     // Third-party libraries
